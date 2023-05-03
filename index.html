@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>MVC-PucRio - Controle Financeiro</title>
+</head>
+
+<body>
+     <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title">
+            <h2>Cadastro de Pessoas</h2>
+        </div>
+        <div class="banner">
+            <img src="./img/controle_financeiro_01.jpg">
+        </div>
+    </header>
+
+     <!-- Opções para adicionar uma nova pessoa -->
+     <section class="newPessoa">
+        <input type="text" id="newNome" placeholder="Adicionar nova pessoa:">
+        <input type="text" id="newCPF" placeholder="CPF:">
+        <input type="text" id="newTelefone" placeholder="Telefone:">
+        <span onclick="newPessoa()" class="addBtn">Adicionar</span>
+    </section>
+
+    <!-- Opções para bucar uma pessoa -->
+    <section class="buscarPessoa">
+        <input type="text" id="getNome" placeholder="Buscar pessoa por nome:">
+        <span onclick="buscarPessoa()" class="addBtn">Buscar</span>
+        <span onclick="getList()" class="addBtn">Todas</span>
+    </section>
+
+    <!-- Tabela com pessoas existentes -->
+    <section class="pessoas">
+        <table id="myTable">
+            <tr>
+                <th>Nome</th>
+                <th>CPF</th>
+                <th>Telefone</th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+            </tr>
+        </table>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
