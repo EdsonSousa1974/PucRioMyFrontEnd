@@ -6,4 +6,4 @@ Este projeto visa implementar um pequeno controle financeiro e pessoal. O famoso
 ---
 ## Como executar
 
-Basta fazer o download do projeto e abrir o arquivo index.html no seu browser.
+Basta fazer o download do projeto e abrir o arquivo index.html no seu browser.  O servidor local das APIs deve estar em execução.
